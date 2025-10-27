@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# CarTapWebsite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CarTap website built with React and Tailwind CSS.
 
 ## Available Scripts
 

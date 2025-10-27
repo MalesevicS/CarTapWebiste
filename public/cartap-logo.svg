@@ -1,0 +1,16 @@
+<svg width="120" height="70" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Car Icon -->
+  <g transform="translate(60, 12)">
+    <!-- Car Body -->
+    <path d="M-25 8 L-20 2 L20 2 L25 8 L25 15 L20 20 L-20 20 L-25 15 Z" fill="white"/>
+    <!-- Car Roof -->
+    <path d="M-15 2 L-10 -2 L10 -2 L15 2 L15 8 L-15 8 Z" fill="white"/>
+    <!-- Front Wheel -->
+    <circle cx="-15" cy="20" r="4" fill="white" stroke="white" stroke-width="1"/>
+    <!-- Rear Wheel -->
+    <circle cx="15" cy="20" r="4" fill="white" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- CARTAP Text -->
+  <text x="60" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">CARTAP</text>
+</svg>
