@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DiscoverCarTap = () => {
+const DiscoverCarTap: React.FC = () => {
   const cards = [
     {
       id: 1,

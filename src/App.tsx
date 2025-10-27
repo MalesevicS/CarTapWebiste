@@ -12,7 +12,7 @@ import DownloadApp from './components/DownloadApp';
 import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App bg-black min-h-screen overflow-x-hidden">
       <Header />
@@ -29,6 +29,6 @@ function App() {
       
     </div>
   );
-}
+};
 
 export default App;

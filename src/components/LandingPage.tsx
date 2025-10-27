@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const LandingPage = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [animateServices, setAnimateServices] = useState(false);
-  const [displayedText, setDisplayedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
+const LandingPage: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [animateServices, setAnimateServices] = useState<boolean>(false);
+  const [displayedText, setDisplayedText] = useState<string>('');
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
 
   const fullText = "Car Cleaning Revolution";
 

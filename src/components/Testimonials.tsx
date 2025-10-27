@@ -1,7 +1,18 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 
-const Testimonials = ({ onScrollStateChange }) => {
-  const scrollContainerRef = useRef(null);
+interface ScrollState {
+  canScrollLeft: boolean;
+  canScrollRight: boolean;
+  scrollLeft: () => void;
+  scrollRight: () => void;
+}
+
+interface TestimonialsProps {
+  onScrollStateChange?: (scrollState: ScrollState) => void;
+}
+
+const Testimonials: React.FC<TestimonialsProps> = ({ onScrollStateChange }) => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const testimonials = [
     {
       id: 1,
@@ -84,7 +95,7 @@ const Testimonials = ({ onScrollStateChange }) => {
     return () => window.removeEventListener('resize', checkScrollButtons);
   }, [checkScrollButtons]);
 
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, index) => (
       <svg
         key={index}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OurServices = () => {
+const OurServices: React.FC = () => {
   const services = [
     {
       id: 1,

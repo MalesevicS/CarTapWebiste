@@ -1,6 +1,13 @@
 import React from 'react';
 
-const TestimonialArrows = ({ onScrollLeft, onScrollRight, canScrollLeft, canScrollRight }) => {
+interface TestimonialArrowsProps {
+  onScrollLeft: () => void;
+  onScrollRight: () => void;
+  canScrollLeft: boolean;
+  canScrollRight: boolean;
+}
+
+const TestimonialArrows: React.FC<TestimonialArrowsProps> = ({ onScrollLeft, onScrollRight, canScrollLeft, canScrollRight }) => {
   return (
     <>
       {/* Left Arrow */}

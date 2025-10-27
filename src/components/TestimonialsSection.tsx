@@ -2,10 +2,17 @@ import React, { useState, useRef, useEffect } from 'react';
 import Testimonials from './Testimonials';
 import TestimonialArrows from './TestimonialArrows';
 
-const TestimonialsSection = () => {
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const [scrollState, setScrollState] = useState({
+interface ScrollState {
+  canScrollLeft: boolean;
+  canScrollRight: boolean;
+  scrollLeft: (() => void) | null;
+  scrollRight: (() => void) | null;
+}
+
+const TestimonialsSection: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [scrollState, setScrollState] = useState<ScrollState>({
     canScrollLeft: false,
     canScrollRight: true,
     scrollLeft: null,
@@ -32,14 +39,14 @@ const TestimonialsSection = () => {
     };
   }, []);
 
-  const handleScrollStateChange = (newScrollState) => {
+  const handleScrollStateChange = (newScrollState: ScrollState) => {
     setScrollState(newScrollState);
   };
 
   return (
     <div ref={sectionRef} className="relative">
       <Testimonials onScrollStateChange={handleScrollStateChange} />
-      {isVisible && (
+      {isVisible && scrollState.scrollLeft && scrollState.scrollRight && (
         <TestimonialArrows 
           onScrollLeft={scrollState.scrollLeft}
           onScrollRight={scrollState.scrollRight}

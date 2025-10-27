@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner: React.FC = () => {
   return (
     <div className="relative mt-8 py-8 flex justify-center">
       <div className="w-full max-w-7xl mx-4">

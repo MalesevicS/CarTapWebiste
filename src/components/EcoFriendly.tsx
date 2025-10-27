@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EcoFriendly = () => {
+const EcoFriendly: React.FC = () => {
   const benefits = [
     {
       title: "Water Conservation",

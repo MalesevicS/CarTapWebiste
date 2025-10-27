@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PhoneShowcase = () => {
+const PhoneShowcase: React.FC = () => {
   return (
     <section id="phone-showcase" className="py-20 bg-black text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

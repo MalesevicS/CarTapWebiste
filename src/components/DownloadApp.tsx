@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DownloadApp = () => {
+const DownloadApp: React.FC = () => {
   return (
     <section id="download-app" className="bg-black py-16 px-4">
       <div className="max-w-7xl mx-auto">
