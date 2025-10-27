@@ -10,6 +10,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import FAQ from './components/FAQ';
 import DownloadApp from './components/DownloadApp';
 import Footer from './components/Footer';
+import AboutCarTap from './components/AboutCarTap';
 import './App.css';
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <OurServices />
       <EcoFriendly />
       <PhoneShowcase />
+      <AboutCarTap />
       <TestimonialsSection />
       <FAQ />
       <DownloadApp />

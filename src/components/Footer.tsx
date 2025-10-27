@@ -44,17 +44,17 @@ const Footer: React.FC = () => {
             </div>
             <div className="space-y-2">
               <div className="text-white font-medium">Services</div>
-              <div className="text-gray-400">Fuel Delivery</div>
-              <div className="text-gray-400">Car Wash</div>
-              <div className="text-gray-400">Car Battery</div>
-              <div className="text-gray-400">Car Tyres</div>
-              <div className="text-gray-400">Car Engine Oil</div>
+              <div className="text-gray-400">Dry Wash</div>
+              <div className="text-gray-400">Exterior Wax</div>
+              <div className="text-gray-400">Premium Wash</div>
+              <div className="text-gray-400">Waterless Cleaning</div>
+              <div className="text-gray-400">Mobile Service</div>
             </div>
             <div className="space-y-2">
               <div className="text-white font-medium">Support</div>
-              <div className="text-gray-400">FAQs</div>
-              <div className="text-gray-400">+381 11 123 4567</div>
-              <div className="text-gray-400">WhatsApp</div>
+              <div className="text-gray-400">Book Service</div>
+              <div className="text-gray-400">Pricing</div>
+              <div className="text-gray-400">Contact Us</div>
               <div className="text-gray-400">EN</div>
               <div className="text-gray-400">Serbia</div>
             </div>

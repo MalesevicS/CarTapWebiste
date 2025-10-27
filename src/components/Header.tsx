@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             </button>
             <button 
               className="text-white hover:text-cyan-400"
-              onClick={() => scrollToSection('discover-cartap')}
+              onClick={() => scrollToSection('about-car-tap')}
             >
               About Us
             </button>
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
                 </button>
                 <button 
                   className="block w-full text-left text-white hover:text-cyan-400 py-2"
-                  onClick={() => scrollToSection('discover-cartap')}
+                  onClick={() => scrollToSection('about-car-tap')}
                 >
                   About Us
                 </button>
